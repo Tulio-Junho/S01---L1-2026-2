@@ -1,7 +1,4 @@
 Dim codigo as integer
-codigo = 4321
-
-Dim resposta as integer
 
 print "Digite o PIN de acesso"
 input codigo
