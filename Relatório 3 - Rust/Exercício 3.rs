@@ -17,19 +17,19 @@ fn main()
     println!("Digite o digito final desejado (0 a 9): ");
     
     let mut desejado = String::new();
-    std::io::stdin().read_line(&mut desejado).expect("Erro ao ler");
+    io::stdin().read_line(&mut desejado).expect("Erro ao ler");
 
     let desejado: i32 = desejado.trim().parse().unwrap();
 
     println!("Digite o limite inferior: ");
     let mut inferior = String::new();
-    std::io::stdin().read_line(&mut inferior).expect("Erro ao ler");
+    io::stdin().read_line(&mut inferior).expect("Erro ao ler");
 
     let inferior: i32 = inferior.trim().parse().unwrap();
 
     println!("Digite o limite superior: ");
     let mut superior = String::new();
-    std::io::stdin().read_line(&mut superior).expect("Erro ao ler");
+    io::stdin().read_line(&mut superior).expect("Erro ao ler");
 
     let superior: i32 = superior.trim().parse().unwrap();
 
