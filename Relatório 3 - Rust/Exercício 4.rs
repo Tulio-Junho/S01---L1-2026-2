@@ -7,7 +7,7 @@ fn calcular_pontuacao(prova1: f64, prova2: f64, redacao: f64) -> f64
 
     if PF >= 60.0
     {
-        println!("Parabens! Candidato aprovado no processo seletivo.!");
+        println!("Parabens! Candidato aprovado no processo seletivo!");
         println!("Pontuacao final: {}", PF);
     }
 
