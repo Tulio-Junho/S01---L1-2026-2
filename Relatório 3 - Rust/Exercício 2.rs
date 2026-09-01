@@ -15,7 +15,7 @@ fn acertou_o_alvo(palpite:   i32, numero: i32) -> bool
 
 fn main()
 {
-    let num: i32 = 10;
+    let num: i32 = 15;
 
     loop
     {
