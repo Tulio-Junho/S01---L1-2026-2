@@ -7,7 +7,7 @@ func gerarEscalaPlantao(n int) {
 
 	for i := 0; i < n; i++ {
 		
-		dia := 1 + (i)*4
+		dia := 1 + (i*4)
 
 		fmt.Printf("Plantão %d: Dia %d do mês\n", i+1, dia)
 	}
