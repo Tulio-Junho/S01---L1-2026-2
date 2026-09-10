@@ -5,7 +5,7 @@ func ValidarCodigoRastreio(codigo string) (bool, string) {
     if len(codigo) == 10 {
         return true, "Codigo de rastreio registrado no sistema!"
     } else {
-        return false, "Erro: O código de rastreio deve ter exatamente 10 caracteres."
+        return false, "Erro! O código de rastreio deve ter exatamente 10 caracteres."
     }
 }
 
