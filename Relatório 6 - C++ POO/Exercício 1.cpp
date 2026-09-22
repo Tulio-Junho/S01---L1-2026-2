@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-class Robo 
+class Banda 
 {
     public:
-        string modelo; 
-        int versao;
-        float PotLaser;
-        int integridade;
+        string nome; 
+        int integrantes;
+        float PotSom;
+        int energia;
 
-        void disparar(Robo &alvo)
+        void duelar(Banda &alvo)
         {
-            alvo.integridade -= PotLaser;
+            alvo.energia -= PotSom;
         }
 };
 
@@ -19,37 +19,32 @@ class Robo
 int main() 
 {
 
-    // No exercício não está pedindo que atribua dinamicamente, então atribui estaticamente mesmo :P
+    Banda banda1;
+    Banda banda2;
 
-    Robo robo1;
-    Robo robo2;
+    banda1.nome = "Banda do Joca";
+    banda1.integrantes = 4;
+    banda1.PotSom = 35;
+    banda1.energia = 1000;
 
-    robo1.modelo = "Vasco";
-    robo1.versao = 1898;
-    robo1.PotLaser = 35;
-    robo1.integridade = 1000;
+    banda2.nome = "Banda do Bocao";
+    banda2.integrantes = 8;
+    banda2.PotSom = 21;
+    banda2.energia = 42;
 
-    // Acredito que neste exercício a integridade também deveria ser float, já que o dano é.
+    banda1.duelar(banda2);
 
-    robo2.modelo = "Bobao";
-    robo2.versao = 2019;
-    robo2.PotLaser = 2;
-    robo2.integridade = 42;
+    cout << "=== Banda 1 ===" << endl;
+    cout << "Nome da Banda: " << banda1.nome << endl;
+    cout << "Numero de Integrantes: " << banda1.integrantes << endl;
+    cout << "Potencia do Som: " << banda1.PotSom << endl;
+    cout << "Energia: " << banda1.energia << endl;
 
-    robo1.disparar(robo2);
-
-
-    cout << "=== Robo 1 ===" << endl;
-    cout << "Modelo: " << robo1.modelo << endl;
-    cout << "Versao: " << robo1.versao << endl;
-    cout << "Potencia do laser: " << robo1.PotLaser << endl;
-    cout << "Integridade: " << robo1.integridade << endl;
-
-    cout << "\n=== Robo 2 ===" << endl;
-    cout << "Modelo: " << robo2.modelo << endl;
-    cout << "Versao: " << robo2.versao << endl;
-    cout << "Potencia do laser: " << robo2.PotLaser << endl;
-    cout << "Integridade: " << robo2.integridade << endl;
+    cout << "\n=== Banda 2 ===" << endl;
+    cout << "Nome da Banda: " << banda2.nome << endl;
+    cout << "Numero de Integrantes: " << banda2.integrantes << endl;
+    cout << "Potencia do Som: " << banda2.PotSom << endl;
+    cout << "Energia: " << banda2.energia << endl;
 
   
     return 0;
