@@ -1,4 +1,3 @@
-
 class HeroiOverwatch:
 
     def __init__(self, codinome: str, funcao: str):
