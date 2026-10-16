@@ -28,7 +28,6 @@ class Clerigo(MortoVivo):
     def mostrar_status(self):
         return super().mostrar_status() + f" | Milagre: {self.milagre}"
 
-
 if __name__ == "__main__":
 
     clerigo = Clerigo("Petrus", 2000, 5, "Lança de Raios")
