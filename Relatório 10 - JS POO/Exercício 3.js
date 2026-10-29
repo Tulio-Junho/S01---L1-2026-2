@@ -51,7 +51,7 @@ class CabanaDoMisterio {
     }
 }
 
-// MAIN
+
 const diario = new DiarioMisterioso(3);
 diario.anotar('Gnomos', 'Médio');
 diario.anotar('Multi-Urso', 'Alto');
