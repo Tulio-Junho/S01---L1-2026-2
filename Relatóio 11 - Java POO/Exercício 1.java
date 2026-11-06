@@ -45,6 +45,7 @@ public class Main {
         mago.apresentar();
         demonio.apresentar();
 
+        
         // Morador morador = new Morador("Teste");
         // Erro: nao podemos instanciar uma classe abstrata.
     }
