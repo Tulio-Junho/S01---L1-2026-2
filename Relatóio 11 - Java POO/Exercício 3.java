@@ -13,7 +13,7 @@ class Alienigena implements Sobrenatural {
 
     @Override
     public void manifestar() {
-        System.out.println(nome + " apareceu e esta usando poderes alienigenas!");
+       System.out.println(nome + " apareceu e esta usando poderes alienigenas!");
     }
 }
 
