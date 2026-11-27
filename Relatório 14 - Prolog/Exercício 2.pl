@@ -4,4 +4,4 @@ ninja_versatil(Ninja) :-
     X \= Y,
     vila(Ninja, konoha).
 
-% Query: ?- ninja_versatil(Ninja).
+    % Query: ?- ninja_versatil(Ninja).
